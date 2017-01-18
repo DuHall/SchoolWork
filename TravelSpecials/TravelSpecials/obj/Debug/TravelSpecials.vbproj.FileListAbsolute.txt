@@ -1,0 +1,11 @@
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\bin\Debug\TravelSpecials.exe.config
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\bin\Debug\TravelSpecials.exe
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\bin\Debug\TravelSpecials.pdb
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\bin\Debug\TravelSpecials.xml
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.vbprojResolveAssemblyReference.cache
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.TravelSpecials.resources
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.Resources.resources
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.vbproj.GenerateResource.Cache
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.exe
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.xml
+c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.pdb
