@@ -2,11 +2,9 @@
  * Created by Dustin Hall on 1/17/2017.
  */
 
-import java.text.NumberFormat;
-import java.util.DoubleSummaryStatistics;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 public class AppleOrchard {
 
