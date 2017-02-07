@@ -1,4 +1,10 @@
 ﻿Public Class frmMain
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+    End Sub
+
     Dim mouse_move As System.Drawing.Point
 #Region "Window setup controls"
 
@@ -21,6 +27,8 @@
 
 #End Region
 
+    Private Sub btnConvert_Click(sender As Object, e As EventArgs) Handles btnConvert.Click
 
+    End Sub
 
 End Class
