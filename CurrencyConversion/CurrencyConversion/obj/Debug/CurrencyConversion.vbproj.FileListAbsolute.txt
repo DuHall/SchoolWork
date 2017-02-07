@@ -1,0 +1,11 @@
+E:\Echo\CurrencyConversion\CurrencyConversion\bin\Debug\CurrencyConversion.exe.config
+E:\Echo\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.vbprojResolveAssemblyReference.cache
+E:\Echo\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.frmMain.resources
+E:\Echo\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.Resources.resources
+E:\Echo\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.vbproj.GenerateResource.Cache
+E:\Echo\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.xml
+E:\Echo\CurrencyConversion\CurrencyConversion\bin\Debug\CurrencyConversion.exe
+E:\Echo\CurrencyConversion\CurrencyConversion\bin\Debug\CurrencyConversion.pdb
+E:\Echo\CurrencyConversion\CurrencyConversion\bin\Debug\CurrencyConversion.xml
+E:\Echo\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.exe
+E:\Echo\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.pdb

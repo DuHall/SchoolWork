@@ -9,3 +9,7 @@ c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpeci
 c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.exe
 c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.xml
 c:\users\clmm92\documents\visual studio 2015\Projects\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.pdb
+E:\SchoolWork\TravelSpecials\TravelSpecials\bin\Debug\TravelSpecials.exe.config
+E:\SchoolWork\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.exe
+E:\SchoolWork\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.xml
+E:\SchoolWork\TravelSpecials\TravelSpecials\obj\Debug\TravelSpecials.pdb
