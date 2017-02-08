@@ -37,18 +37,26 @@ Partial Class frmMain
         Me.lblYenTotal = New System.Windows.Forms.Label()
         Me.lblCanadaTotal = New System.Windows.Forms.Label()
         Me.pnlCustRates = New System.Windows.Forms.Panel()
+        Me.btnCustClear = New System.Windows.Forms.Button()
+        Me.txtCanDateTime = New System.Windows.Forms.TextBox()
+        Me.txtYenDateTime = New System.Windows.Forms.TextBox()
+        Me.txtEuroDateTime = New System.Windows.Forms.TextBox()
+        Me.btnCloseCustRate = New System.Windows.Forms.Button()
+        Me.lblSaved = New System.Windows.Forms.Label()
+        Me.btnSaveCustRate = New System.Windows.Forms.Button()
+        Me.txtCanCust = New System.Windows.Forms.TextBox()
+        Me.txtYenCust = New System.Windows.Forms.TextBox()
+        Me.txtEuroCust = New System.Windows.Forms.TextBox()
+        Me.lblCanRate = New System.Windows.Forms.Label()
+        Me.lblYenCust = New System.Windows.Forms.Label()
+        Me.lblEuroCust = New System.Windows.Forms.Label()
+        Me.lblSetCustRates = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lblCustomRatesTitle = New System.Windows.Forms.Label()
         Me.pnlCustRatesTop = New System.Windows.Forms.Panel()
         Me.btnExitCustRates = New System.Windows.Forms.Button()
-        Me.lblSetCustRates = New System.Windows.Forms.Label()
-        Me.lblEuroCust = New System.Windows.Forms.Label()
-        Me.lblYenCust = New System.Windows.Forms.Label()
-        Me.lblCanRate = New System.Windows.Forms.Label()
-        Me.txtEuroCust = New System.Windows.Forms.TextBox()
-        Me.txtYenCust = New System.Windows.Forms.TextBox()
-        Me.txtCanCust = New System.Windows.Forms.TextBox()
-        Me.btnSaveCustRate = New System.Windows.Forms.Button()
+        Me.lblInternet = New System.Windows.Forms.Label()
+        Me.lblStatus = New System.Windows.Forms.Label()
         Me.pnlTopControl.SuspendLayout()
         Me.pnlCustRates.SuspendLayout()
         Me.pnlCustRatesTop.SuspendLayout()
@@ -117,7 +125,7 @@ Partial Class frmMain
         Me.btnRealtimeConversion.Name = "btnRealtimeConversion"
         Me.btnRealtimeConversion.Size = New System.Drawing.Size(211, 28)
         Me.btnRealtimeConversion.TabIndex = 4
-        Me.btnRealtimeConversion.Text = "Daily Rates"
+        Me.btnRealtimeConversion.Text = "Current Exchange Rates"
         Me.btnRealtimeConversion.UseVisualStyleBackColor = False
         '
         'btnConvert
@@ -131,7 +139,7 @@ Partial Class frmMain
         Me.btnConvert.Name = "btnConvert"
         Me.btnConvert.Size = New System.Drawing.Size(211, 54)
         Me.btnConvert.TabIndex = 6
-        Me.btnConvert.Text = "Convert"
+        Me.btnConvert.Text = "Convert Currency"
         Me.btnConvert.UseVisualStyleBackColor = False
         '
         'lblEnterUSDolAmt
@@ -221,6 +229,13 @@ Partial Class frmMain
         '
         'pnlCustRates
         '
+        Me.pnlCustRates.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlCustRates.Controls.Add(Me.btnCustClear)
+        Me.pnlCustRates.Controls.Add(Me.txtCanDateTime)
+        Me.pnlCustRates.Controls.Add(Me.txtYenDateTime)
+        Me.pnlCustRates.Controls.Add(Me.txtEuroDateTime)
+        Me.pnlCustRates.Controls.Add(Me.btnCloseCustRate)
+        Me.pnlCustRates.Controls.Add(Me.lblSaved)
         Me.pnlCustRates.Controls.Add(Me.btnSaveCustRate)
         Me.pnlCustRates.Controls.Add(Me.txtCanCust)
         Me.pnlCustRates.Controls.Add(Me.txtYenCust)
@@ -229,11 +244,144 @@ Partial Class frmMain
         Me.pnlCustRates.Controls.Add(Me.lblYenCust)
         Me.pnlCustRates.Controls.Add(Me.lblEuroCust)
         Me.pnlCustRates.Controls.Add(Me.lblSetCustRates)
-        Me.pnlCustRates.Location = New System.Drawing.Point(189, 107)
+        Me.pnlCustRates.Location = New System.Drawing.Point(181, 107)
         Me.pnlCustRates.Name = "pnlCustRates"
         Me.pnlCustRates.Size = New System.Drawing.Size(457, 289)
         Me.pnlCustRates.TabIndex = 16
-        Me.pnlCustRates.Visible = False
+        '
+        'btnCustClear
+        '
+        Me.btnCustClear.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnCustClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnCustClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCustClear.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnCustClear.Location = New System.Drawing.Point(364, 254)
+        Me.btnCustClear.Name = "btnCustClear"
+        Me.btnCustClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnCustClear.TabIndex = 13
+        Me.btnCustClear.Text = "Clear"
+        Me.btnCustClear.UseVisualStyleBackColor = False
+        '
+        'txtCanDateTime
+        '
+        Me.txtCanDateTime.Location = New System.Drawing.Point(339, 203)
+        Me.txtCanDateTime.Name = "txtCanDateTime"
+        Me.txtCanDateTime.Size = New System.Drawing.Size(100, 20)
+        Me.txtCanDateTime.TabIndex = 12
+        '
+        'txtYenDateTime
+        '
+        Me.txtYenDateTime.Location = New System.Drawing.Point(339, 153)
+        Me.txtYenDateTime.Name = "txtYenDateTime"
+        Me.txtYenDateTime.Size = New System.Drawing.Size(100, 20)
+        Me.txtYenDateTime.TabIndex = 11
+        '
+        'txtEuroDateTime
+        '
+        Me.txtEuroDateTime.Location = New System.Drawing.Point(339, 109)
+        Me.txtEuroDateTime.Name = "txtEuroDateTime"
+        Me.txtEuroDateTime.Size = New System.Drawing.Size(100, 20)
+        Me.txtEuroDateTime.TabIndex = 10
+        '
+        'btnCloseCustRate
+        '
+        Me.btnCloseCustRate.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnCloseCustRate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnCloseCustRate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCloseCustRate.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnCloseCustRate.Location = New System.Drawing.Point(3, 34)
+        Me.btnCloseCustRate.Name = "btnCloseCustRate"
+        Me.btnCloseCustRate.Size = New System.Drawing.Size(75, 23)
+        Me.btnCloseCustRate.TabIndex = 9
+        Me.btnCloseCustRate.Text = "Close"
+        Me.btnCloseCustRate.UseVisualStyleBackColor = False
+        '
+        'lblSaved
+        '
+        Me.lblSaved.AutoSize = True
+        Me.lblSaved.ForeColor = System.Drawing.Color.LimeGreen
+        Me.lblSaved.Location = New System.Drawing.Point(81, 254)
+        Me.lblSaved.Name = "lblSaved"
+        Me.lblSaved.Size = New System.Drawing.Size(0, 13)
+        Me.lblSaved.TabIndex = 8
+        '
+        'btnSaveCustRate
+        '
+        Me.btnSaveCustRate.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnSaveCustRate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnSaveCustRate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSaveCustRate.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnSaveCustRate.Location = New System.Drawing.Point(283, 253)
+        Me.btnSaveCustRate.Name = "btnSaveCustRate"
+        Me.btnSaveCustRate.Size = New System.Drawing.Size(75, 23)
+        Me.btnSaveCustRate.TabIndex = 7
+        Me.btnSaveCustRate.Text = "Save"
+        Me.btnSaveCustRate.UseVisualStyleBackColor = False
+        '
+        'txtCanCust
+        '
+        Me.txtCanCust.Location = New System.Drawing.Point(219, 203)
+        Me.txtCanCust.Name = "txtCanCust"
+        Me.txtCanCust.Size = New System.Drawing.Size(100, 20)
+        Me.txtCanCust.TabIndex = 6
+        Me.txtCanCust.Text = "0.00"
+        '
+        'txtYenCust
+        '
+        Me.txtYenCust.Location = New System.Drawing.Point(219, 154)
+        Me.txtYenCust.Name = "txtYenCust"
+        Me.txtYenCust.Size = New System.Drawing.Size(100, 20)
+        Me.txtYenCust.TabIndex = 5
+        Me.txtYenCust.Text = "0.00"
+        '
+        'txtEuroCust
+        '
+        Me.txtEuroCust.Location = New System.Drawing.Point(219, 109)
+        Me.txtEuroCust.Name = "txtEuroCust"
+        Me.txtEuroCust.Size = New System.Drawing.Size(100, 20)
+        Me.txtEuroCust.TabIndex = 4
+        Me.txtEuroCust.Text = "0.00"
+        '
+        'lblCanRate
+        '
+        Me.lblCanRate.AutoSize = True
+        Me.lblCanRate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCanRate.Location = New System.Drawing.Point(77, 203)
+        Me.lblCanRate.Name = "lblCanRate"
+        Me.lblCanRate.Size = New System.Drawing.Size(116, 20)
+        Me.lblCanRate.TabIndex = 3
+        Me.lblCanRate.Text = "Canadian Rate"
+        '
+        'lblYenCust
+        '
+        Me.lblYenCust.AutoSize = True
+        Me.lblYenCust.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblYenCust.Location = New System.Drawing.Point(116, 154)
+        Me.lblYenCust.Name = "lblYenCust"
+        Me.lblYenCust.Size = New System.Drawing.Size(77, 20)
+        Me.lblYenCust.TabIndex = 2
+        Me.lblYenCust.Text = "Yen Rate"
+        '
+        'lblEuroCust
+        '
+        Me.lblEuroCust.AutoSize = True
+        Me.lblEuroCust.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEuroCust.Location = New System.Drawing.Point(112, 109)
+        Me.lblEuroCust.Name = "lblEuroCust"
+        Me.lblEuroCust.Size = New System.Drawing.Size(82, 20)
+        Me.lblEuroCust.TabIndex = 1
+        Me.lblEuroCust.Text = "Euro Rate"
+        '
+        'lblSetCustRates
+        '
+        Me.lblSetCustRates.AutoSize = True
+        Me.lblSetCustRates.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSetCustRates.Location = New System.Drawing.Point(162, 55)
+        Me.lblSetCustRates.Name = "lblSetCustRates"
+        Me.lblSetCustRates.Size = New System.Drawing.Size(130, 18)
+        Me.lblSetCustRates.TabIndex = 0
+        Me.lblSetCustRates.Text = "Set Custom Rates"
+        Me.lblSetCustRates.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Button1
         '
@@ -269,11 +417,10 @@ Partial Class frmMain
         Me.pnlCustRatesTop.Controls.Add(Me.btnExitCustRates)
         Me.pnlCustRatesTop.Controls.Add(Me.lblCustomRatesTitle)
         Me.pnlCustRatesTop.Controls.Add(Me.Button1)
-        Me.pnlCustRatesTop.Location = New System.Drawing.Point(189, 108)
+        Me.pnlCustRatesTop.Location = New System.Drawing.Point(181, 108)
         Me.pnlCustRatesTop.Name = "pnlCustRatesTop"
         Me.pnlCustRatesTop.Size = New System.Drawing.Size(457, 28)
         Me.pnlCustRatesTop.TabIndex = 8
-        Me.pnlCustRatesTop.Visible = False
         '
         'btnExitCustRates
         '
@@ -290,80 +437,23 @@ Partial Class frmMain
         Me.btnExitCustRates.Text = "X"
         Me.btnExitCustRates.UseVisualStyleBackColor = False
         '
-        'lblSetCustRates
+        'lblInternet
         '
-        Me.lblSetCustRates.AutoSize = True
-        Me.lblSetCustRates.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSetCustRates.Location = New System.Drawing.Point(162, 55)
-        Me.lblSetCustRates.Name = "lblSetCustRates"
-        Me.lblSetCustRates.Size = New System.Drawing.Size(130, 18)
-        Me.lblSetCustRates.TabIndex = 0
-        Me.lblSetCustRates.Text = "Set Custom Rates"
-        Me.lblSetCustRates.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblInternet.AutoSize = True
+        Me.lblInternet.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInternet.Location = New System.Drawing.Point(108, 31)
+        Me.lblInternet.Name = "lblInternet"
+        Me.lblInternet.Size = New System.Drawing.Size(0, 18)
+        Me.lblInternet.TabIndex = 17
         '
-        'lblEuroCust
+        'lblStatus
         '
-        Me.lblEuroCust.AutoSize = True
-        Me.lblEuroCust.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEuroCust.Location = New System.Drawing.Point(112, 109)
-        Me.lblEuroCust.Name = "lblEuroCust"
-        Me.lblEuroCust.Size = New System.Drawing.Size(82, 20)
-        Me.lblEuroCust.TabIndex = 1
-        Me.lblEuroCust.Text = "Euro Rate"
-        '
-        'lblYenCust
-        '
-        Me.lblYenCust.AutoSize = True
-        Me.lblYenCust.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblYenCust.Location = New System.Drawing.Point(116, 154)
-        Me.lblYenCust.Name = "lblYenCust"
-        Me.lblYenCust.Size = New System.Drawing.Size(77, 20)
-        Me.lblYenCust.TabIndex = 2
-        Me.lblYenCust.Text = "Yen Rate"
-        '
-        'lblCanRate
-        '
-        Me.lblCanRate.AutoSize = True
-        Me.lblCanRate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCanRate.Location = New System.Drawing.Point(77, 203)
-        Me.lblCanRate.Name = "lblCanRate"
-        Me.lblCanRate.Size = New System.Drawing.Size(116, 20)
-        Me.lblCanRate.TabIndex = 3
-        Me.lblCanRate.Text = "Canadian Rate"
-        '
-        'txtEuroCust
-        '
-        Me.txtEuroCust.Location = New System.Drawing.Point(242, 109)
-        Me.txtEuroCust.Name = "txtEuroCust"
-        Me.txtEuroCust.Size = New System.Drawing.Size(100, 20)
-        Me.txtEuroCust.TabIndex = 4
-        '
-        'txtYenCust
-        '
-        Me.txtYenCust.Location = New System.Drawing.Point(242, 154)
-        Me.txtYenCust.Name = "txtYenCust"
-        Me.txtYenCust.Size = New System.Drawing.Size(100, 20)
-        Me.txtYenCust.TabIndex = 5
-        '
-        'txtCanCust
-        '
-        Me.txtCanCust.Location = New System.Drawing.Point(242, 203)
-        Me.txtCanCust.Name = "txtCanCust"
-        Me.txtCanCust.Size = New System.Drawing.Size(100, 20)
-        Me.txtCanCust.TabIndex = 6
-        '
-        'btnSaveCustRate
-        '
-        Me.btnSaveCustRate.BackColor = System.Drawing.Color.SteelBlue
-        Me.btnSaveCustRate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnSaveCustRate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSaveCustRate.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnSaveCustRate.Location = New System.Drawing.Point(267, 254)
-        Me.btnSaveCustRate.Name = "btnSaveCustRate"
-        Me.btnSaveCustRate.Size = New System.Drawing.Size(75, 23)
-        Me.btnSaveCustRate.TabIndex = 7
-        Me.btnSaveCustRate.Text = "Save"
-        Me.btnSaveCustRate.UseVisualStyleBackColor = False
+        Me.lblStatus.AutoSize = True
+        Me.lblStatus.Location = New System.Drawing.Point(0, 34)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(106, 13)
+        Me.lblStatus.TabIndex = 18
+        Me.lblStatus.Text = "Current Rate Status: "
         '
         'frmMain
         '
@@ -371,6 +461,8 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
         Me.ClientSize = New System.Drawing.Size(839, 560)
+        Me.Controls.Add(Me.lblStatus)
+        Me.Controls.Add(Me.lblInternet)
         Me.Controls.Add(Me.pnlCustRatesTop)
         Me.Controls.Add(Me.pnlCustRates)
         Me.Controls.Add(Me.lblCanadaTotal)
@@ -426,4 +518,12 @@ Partial Class frmMain
     Friend WithEvents lblEuroCust As Label
     Friend WithEvents lblSetCustRates As Label
     Friend WithEvents btnSaveCustRate As Button
+    Friend WithEvents lblSaved As Label
+    Friend WithEvents btnCloseCustRate As Button
+    Friend WithEvents txtCanDateTime As TextBox
+    Friend WithEvents txtYenDateTime As TextBox
+    Friend WithEvents txtEuroDateTime As TextBox
+    Friend WithEvents btnCustClear As Button
+    Friend WithEvents lblInternet As Label
+    Friend WithEvents lblStatus As Label
 End Class
