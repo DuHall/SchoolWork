@@ -20,3 +20,14 @@ C:\Projects\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyC
 C:\Projects\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.frmMain.resources
 C:\Projects\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.Resources.resources
 C:\Projects\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.vbproj.GenerateResource.Cache
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\bin\Debug\CurrencyConversion.exe.config
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.exe
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.xml
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.pdb
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\bin\Debug\CurrencyConversion.exe
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\bin\Debug\CurrencyConversion.pdb
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\bin\Debug\CurrencyConversion.xml
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.vbprojResolveAssemblyReference.cache
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.frmMain.resources
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.Resources.resources
+E:\SchoolWork\CurrencyConversion\CurrencyConversion\obj\Debug\CurrencyConversion.vbproj.GenerateResource.Cache

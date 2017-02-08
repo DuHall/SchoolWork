@@ -1,11 +1,15 @@
 ﻿Public Class frmMain
 
-    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
-    End Sub
+
+    Dim dblEuroCurrency As Double = 0.00
+    Dim dblYenCurrency As Double = 0.00
+    Dim dblCanCurrency As Double = 0.00
+
 
     Dim mouse_move As System.Drawing.Point
+
 #Region "Window setup controls"
 
     Private Sub pnlTopControl_MouseDown(sender As Object, e As MouseEventArgs) Handles pnlTopControl.MouseDown
@@ -28,7 +32,32 @@
 #End Region
 
     Private Sub btnConvert_Click(sender As Object, e As EventArgs) Handles btnConvert.Click
+        Dim dblUSCurrency As Double = txtUSD.Text
+
+
+        ''Set the total for each currency value
+        txtUSD.Text = dblUSCurrency
+
+        lblEuroTotal.Text = dblUSCurrency * dblEuroCurrency
+        lblYenTotal.Text = dblUSCurrency * dblYenCurrency
+        lblCanadaTotal.Text = dblUSCurrency * dblCanCurrency
+
+
 
     End Sub
 
+    Private Sub btnRealtimeConversion_Click(sender As Object, e As EventArgs) Handles btnRealtimeConversion.Click
+        dblEuroCurrency = 0.935
+        dblYenCurrency = 112.203
+        dblCanCurrency = 1.318
+    End Sub
+
+    Private Sub btnExitCustRates_Click(sender As Object, e As EventArgs) Handles btnExitCustRates.Click
+        pnlCustRatesTop.Visible = False
+    End Sub
+
+    Private Sub btnCustConvert_Click(sender As Object, e As EventArgs) Handles btnCustConvert.Click
+        pnlCustRates.Visible = True
+        pnlCustRatesTop.Visible = True
+    End Sub
 End Class
